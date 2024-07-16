@@ -1,5 +1,6 @@
 package dio;
 
+import dio.facade.Facade;
 import  dio.singleton.SingletonBasico;
 import dio.singleton.SingletonHolder;
 import dio.singleton.SingletonResumido;
@@ -39,5 +40,9 @@ public class Test {
         robo.setComportamento(agressivo);
         robo.mover();
         robo.mover();
+
+        //Facade
+        Facade facade = new Facade();
+        facade.migrarCliente("Igor", "10010002");
     }
 }
